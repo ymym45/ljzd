@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>内部数据动态看板</title>
+<meta name="description" content="Power BI打造，全自动实时更新数据动态，数据每日自动同步，PC移动端自适应" />
+<link rel="shortcut icon" href="https://pbihub.cn/favicon.ico"/>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div id="wrap" class="wrap">
+	<iframe width="100%" height="100%" src="https://app.powerbi.cn/reportEmbed?reportId=b4ab5cc2-db79-46d2-8f6e-ab5e06107917&autoAuth=true&ctid=2734efa5-19a0-4850-aa33-7789f49d521d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW1jLXNoYS1yZWRpcmVjdC5hbmFseXNpcy5jaGluYWNsb3VkYXBpLmNuLyJ9" frameborder="0" allowFullScreen="true"></iframe>
+</div>
+  
+<script type="text/javascript">
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	var element = document.getElementById('wrap');
+		if (isMobile) {
+			element.innerHTML = '<iframe width="100%" height="100%" src="https://app.powerbi.cn/reportEmbed?reportId=e24363ff-e4b5-46e2-9a8b-446fbda68218&autoAuth=true&ctid=2734efa5-19a0-4850-aa33-7789f49d521d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW1jLXNoYS1yZWRpcmVjdC5hbmFseXNpcy5jaGluYWNsb3VkYXBpLmNuLyJ9" frameborder="0" allowFullScreen="true" </iframe>';
+		} else {
+			element.innerHTML = '<iframe width="100%" height="100%" src="https://app.powerbi.cn/reportEmbed?reportId=b4ab5cc2-db79-46d2-8f6e-ab5e06107917&autoAuth=true&ctid=2734efa5-19a0-4850-aa33-7789f49d521d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW1jLXNoYS1yZWRpcmVjdC5hbmFseXNpcy5jaGluYWNsb3VkYXBpLmNuLyJ9" frameborder="0" allowFullScreen="true" </iframe>';
+		}
+</script>
+
+<div style="display:none">
+<script type="text/javascript" src="https://v1.cnzz.com/z_stat.php?id=1278695107&web_id=1278695107"></script>
+
+  
+    <script type="text/javascript">
+        window._pt_lt = new Date().getTime();
+        window._pt_sp_2 = [];
+        _pt_sp_2.push('setAccount,246467ec');
+        var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        (function() {
+            var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+            atag.src = _protocol + 'js.ptengine.cn/246467ec.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(atag, s);
+        })();
+    </script>
+            
+</div> 
+
+</body>
+
+</html>
